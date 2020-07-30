@@ -6,6 +6,7 @@ import Artists from './components/artists';
 import Settings from './components/settings';
 import Disk from './components/disk';
 import ZingTouch from 'zingtouch';
+import Songs from './components/songs';
 
 class App extends Component {
   state = {
@@ -35,7 +36,7 @@ class App extends Component {
       }
     });
   };
-  rotateRight =  function() {
+  rotateRight = function () {
     var albums = document.getElementsByClassName("albums")[0];
     var songs = document.getElementsByClassName("songs")[0];
     var artists = document.getElementsByClassName("artists")[0];
@@ -57,7 +58,7 @@ class App extends Component {
     }
   };
 
-  rotateLeft = function() {
+  rotateLeft = function () {
     var albums = document.getElementsByClassName("albums")[0];
     var songs = document.getElementsByClassName("songs")[0];
     var artists = document.getElementsByClassName("artists")[0];
@@ -78,6 +79,49 @@ class App extends Component {
       }
     }
   };
+  goHome = () => { // function to go back to the main menu(home)
+    this.setState({
+      mainMenuDisp: true,
+      albumsDisp: false,
+      songsDisp: false,
+      artistsDisp: false,
+      settingsDisp: false
+    });
+  };
+  select = () => { // function to select a menu choice
+    if (this.state.mainMenuDisp) {
+      this.setState({
+        mainMenuDisp: false,
+        albumsDisp: false,
+        songsDisp: false,
+        artistsDisp: false,
+        settingsDisp: false
+      });
+
+      var albums = document.getElementsByClassName("albums")[0];
+      var songs = document.getElementsByClassName("songs")[0];
+      var artists = document.getElementsByClassName("artists")[0];
+      var settings = document.getElementsByClassName("settings")[0];
+
+      if (albums.classList.contains('highlight')) {
+        this.setState({
+          albumsDisp: true
+        });
+      }else if (songs.classList.contains('highlight')) {
+        this.setState({
+          songsDisp: true
+        });
+      }else if (artists.classList.contains('highlight')) {
+        this.setState({
+          artistsDisp: true
+        });
+      }else if (settings.classList.contains('highlight')) {
+        this.setState({
+          settingsDisp: true
+        });
+      }
+    }
+  }
   render() {
     const { mainMenuDisp, albumsDisp, songsDisp, artistsDisp, settingsDisp } = this.state;
     return (
@@ -85,9 +129,10 @@ class App extends Component {
         <div className="main">
           {mainMenuDisp && <Display />}
           {albumsDisp && <Albums />}
+          {songsDisp && <Songs />}
           {artistsDisp && <Artists />}
           {settingsDisp && <Settings />}
-          <Disk />
+          <Disk goHome={this.goHome} select={this.select} />
         </div>
       </div>
     );
