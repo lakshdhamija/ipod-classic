@@ -3,7 +3,7 @@ import './css/App.css';
 import Display from './components/display';
 import Albums from './components/albums';
 import Artists from './components/artists';
-import Settings from '../components/settings';
+import Settings from './components/settings';
 
 class App extends Component {
   state = {
