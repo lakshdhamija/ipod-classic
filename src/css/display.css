@@ -1,0 +1,28 @@
+.Display {
+    background-image: url("https://wallpaperplay.com/walls/full/6/9/3/392962.jpg");
+    position: relative;
+    width: 82%;
+    height: 38%;
+    top: 4.5%;
+    left: 8%;
+    border: 1px solid brown;
+    border-radius: 5%;
+    background-size: cover;
+}
+.menu {
+    width: 100%;
+    opacity: 0.65;
+    height: 98.5%;
+    background-color: white;
+    border-radius: 5%;
+}
+
+.menuTitle {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.selected {
+    background-color: brown;
+    color: white;
+}
