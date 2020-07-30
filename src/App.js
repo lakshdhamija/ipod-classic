@@ -3,6 +3,7 @@ import './css/App.css';
 import Display from './components/display';
 import Albums from './components/albums';
 import Artists from './components/artists';
+import Settings from '../components/settings';
 
 class App extends Component {
   state = {
@@ -20,6 +21,7 @@ class App extends Component {
           {menuDisp && <Display />}
           {albumsDisp && <Albums />}
           {artistsDisp && <Artists />}
+          {settingsDisp && <Settings />}
         </div>
       </div>
     );
