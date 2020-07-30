@@ -22,7 +22,7 @@
     font-size: 1.2rem;
 }
 
-.selected {
+.highlight {
     background-color: brown;
     color: white;
 }

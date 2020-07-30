@@ -6,7 +6,7 @@ function Display() { // Function based Component Display
         <div className="Display">
             <div className="menu">
                 <div className="menuTitle">iPod.js</div>
-                <div className="albums" className="selected">Albums</div>
+                <div className="albums" className="highlight">Albums</div>
                 <div className="songs">Songs</div>
                 <div className="artists">Artists</div>
                 <div className="settings">Settings</div>
