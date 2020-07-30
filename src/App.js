@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './css/App.css';
 import Display from './components/display';
+import Albums from './components/albums';
+import Artists from './components/artists';
 
 class App extends Component {
   state = {
@@ -11,11 +13,13 @@ class App extends Component {
     settingsDisp: false
   };  
   render() {
-    const {menuDisp} = this.state;
+    const {menuDisp, albumsDisp, songsDisp, artistsDisp, settingsDisp} = this.state;
     return (
       <div className="App">
         <div className="main">
           {menuDisp && <Display />}
+          {albumsDisp && <Albums />}
+          {artistsDisp && <Artists />}
         </div>
       </div>
     );

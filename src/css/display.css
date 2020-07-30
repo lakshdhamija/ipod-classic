@@ -18,6 +18,7 @@
 }
 
 .menuTitle {
+    text-align: center;
     font-weight: bold;
     font-size: 1.2rem;
 }
@@ -25,4 +26,8 @@
 .highlight {
     background-color: brown;
     color: white;
+}
+.albums, .songs, .artists, .settings{
+    padding-left: 1em;
+    margin: 0.2em 0;
 }
