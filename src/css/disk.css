@@ -1,0 +1,64 @@
+/* Main Disk  */
+
+.Disk {
+    position: relative;
+    height: 36%;
+    left: 19%;
+    width: 60%;
+    top: 13.5%;
+    border: 1px solid brown;
+    border-radius: 50%;
+    text-align: center;
+}
+
+/* Middle Button  */
+
+.midBtn {
+    position: relative;
+    display: inline-block;
+    width: 35%;
+    height: 35%;
+    border: 1px solid brown;
+    top: 10%;
+    border-radius: 50%;
+}
+
+/* The 3 buttons */
+
+img {
+    width: 19.5%;
+}
+
+/* Forward Button  */
+
+.forward {
+    position: relative;
+    left: 67%;
+    top: 42%;
+}
+
+/* Previous Button  */
+
+.previous {
+    position: relative;
+    right: 21%;
+    top: 42%;
+}
+
+/* Play-Pause Buttton */
+
+.play-pause {
+    position: relative;
+    right: 8%;
+    top: 73%;
+}
+
+/* home button  */
+
+.home {
+    position: relative;
+    right: 31%;
+    top: 4%;
+    font-size: 3vh;
+    font-weight: bold;
+}
