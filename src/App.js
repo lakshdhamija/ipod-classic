@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './css/App.css';
 import Display from './components/display';
 import Albums from './components/albums';
@@ -8,7 +8,7 @@ import Disk from './components/disk';
 import ZingTouch from 'zingtouch';
 import Songs from './components/songs';
 
-class App extends Component {
+class App extends React.Component {
   state = {
     mainMenuDisp: true,
     albumsDisp: false,
