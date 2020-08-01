@@ -27,7 +27,7 @@
     background-color: brown;
     color: white;
 }
-.albums, .songs, .artists, .settings{
+.albums, .songs, .artists, .settings, .all-songs, .top-charts, .song1, .song2, .song3{
     padding-left: 1em;
     margin: 0.2em 0;
 }
