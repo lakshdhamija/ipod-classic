@@ -1,3 +1,4 @@
+/* The screen */
 .Display {
     background-image: url("https://wallpaperplay.com/walls/full/6/9/3/392962.jpg");
     position: relative;
@@ -9,6 +10,8 @@
     border-radius: 5%;
     background-size: cover;
 }
+
+/* The available menu  */
 .menu {
     width: 100%;
     opacity: 0.65;
@@ -27,6 +30,8 @@
     background-color: brown;
     color: white;
 }
+
+/* menu entries  */
 .albums, .songs, .artists, .settings, .all-songs, .top-charts, .song1, .song2, .song3{
     padding-left: 1em;
     margin: 0.2em 0;

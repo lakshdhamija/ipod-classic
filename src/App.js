@@ -1,5 +1,7 @@
 import React from 'react';
-import './css/App.css';
+import './css/App.css'; // css for App component
+
+//importing other components and libraries
 import Display from './components/display';
 import Albums from './components/albums';
 import Artists from './components/artists';
@@ -8,7 +10,7 @@ import Disk from './components/disk';
 import ZingTouch from 'zingtouch';
 import Songs from './components/songs';
 
-class App extends React.Component {
+class App extends React.Component { // Class based component app
   state = {
     mainMenuDisp: true,
     albumsDisp: false,
@@ -17,7 +19,7 @@ class App extends React.Component {
     settingsDisp: false,
     degree: 0
   };
-  componentDidMount() {
+  componentDidMount() { // for rotation of the disk
     this.rotation();
   }
   rotation = function () { // Function to make our disk rotate
@@ -36,7 +38,7 @@ class App extends React.Component {
       }
     });
   };
-  rotateRight = function () {
+  rotateRight = function () { // to go down
     var albums = document.getElementsByClassName("albums")[0];
     var songs = document.getElementsByClassName("songs")[0];
     var artists = document.getElementsByClassName("artists")[0];
@@ -58,7 +60,7 @@ class App extends React.Component {
     }
   };
 
-  rotateLeft = function () {
+  rotateLeft = function () { // to go up
     var albums = document.getElementsByClassName("albums")[0];
     var songs = document.getElementsByClassName("songs")[0];
     var artists = document.getElementsByClassName("artists")[0];

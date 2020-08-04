@@ -4,19 +4,19 @@ import AllSongs from '../components/all_songs';
 import TopCharts from '../components/top_charts';
 import ZingTouch from 'zingtouch';
 
-class Songs extends React.Component {
-    state = {
+class Songs extends React.Component { // class based component Songs
+    state = { // default state
         dispAllSongs: false,
         dispTopCharts: false,
         dispCurrPage: true,
         degree: 0
     }
-    componentDidMount() {
+    componentDidMount() { // when component is mounted
         this.rotation();
         var midBtn = document.getElementsByClassName("midBtn")[0];
         midBtn.addEventListener("click", this.select);
     }
-    componentWillUnmount() {
+    componentWillUnmount() { // when cmponent unmounts
         this.setState({
             dispAllSongs: false,
             dispTopCharts: false,
@@ -54,7 +54,7 @@ class Songs extends React.Component {
             }
         });
     };
-    select = () => {
+    select = () => { // to select the current highlighted element
         var allSongs = document.querySelector('.all-songs');
         var topCharts = document.querySelector('.top-charts');
         if (this.state.dispCurrPage) {
