@@ -20,7 +20,7 @@ class AllSongs extends React.Component {
             dispSong1: false,
             dispSong2: false,
             dispSong3: false,
-            dispCurrPage: true
+            dispCurrPage: false
         });
     }
     rotation = function () { // Function to make our disk rotate
@@ -101,9 +101,9 @@ class AllSongs extends React.Component {
                         <div className="song3">Shape of You - Ed Sheeran</div>
                     </div>
                 }
-                {dispSong1 && <MusicPlayer />}
-                {dispSong2 && <MusicPlayer />}
-                {dispSong3 && <MusicPlayer />}
+                {dispSong1 && <MusicPlayer name="Thandi Hawa - Ritviz" imagePath="https://i.ytimg.com/vi/VZ60FEaZZXA/hqdefault.jpg" songPath="http://mp3.vlcmusic.com/mp3/org/27159.mp3"/>}
+                {dispSong2 && <MusicPlayer name="Cold/Mess - Prateek Kuhad" imagePath="https://www.redwolf.in/image/cache/catalog/marketplace/prateek-kuhad/prateek-kuhad-cold-mess-teal-sweatshirt-artwork-700x700.png" songPath="https://t4.bcbits.com/stream/2d3d6f625764fcfdc758ddf190eeb53e/mp3-128/3058631755?p=0&ts=1596634649&t=49afd583d0bbd75251443f1f72d04cefdccce61a&token=1596634649_3687c09f269fc25649026a69b464d97798fc40f1"/>}
+                {dispSong3 && <MusicPlayer name="Shape of You - Ed Sheeran" imagePath="https://m.media-amazon.com/images/I/81PPDaaySeL._SS500_.jpg" songPath="https://dexo.cutepup.club/2ccf9e9a5ac0d999e3b26/Ed%20Sheeran%20-%20Shape%20Of%20You%20%5BOfficial%5D.mp3"/>}
             </div>
         );
     }

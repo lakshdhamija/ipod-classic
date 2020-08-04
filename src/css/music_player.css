@@ -1,0 +1,37 @@
+.Music_player {
+    height: 100%;
+    width: 100%;
+    background: white;
+    border-radius: 5%;
+}
+
+.imageContainer {
+    height: "100%";
+    width: "100%";
+    border-radius: "5%";
+}
+
+#seek-bar{
+    width: 85%;
+    height: 5px;
+    background-color:gray;
+    display: flex;
+    border-radius: 50px;
+    margin-top: 1em;
+    margin-left: 25px;
+}
+
+#fill{
+    height: 5px;
+    background-color:brown;
+    border-radius: 20px;
+}
+
+#handle{
+    width: 8px;
+    height: 8px;
+    background-color:brown;
+    border-radius: 50%;
+    margin-left: -5px;
+    transform: scale(2);
+}

@@ -132,7 +132,7 @@ class App extends React.Component {
           {songsDisp && <Songs />}
           {artistsDisp && <Artists />}
           {settingsDisp && <Settings />}
-          <Disk goHome={this.goHome} select={this.select} />
+          <Disk goHome={this.goHome} select={this.select} play={this.play}/>
         </div>
       </div>
     );
